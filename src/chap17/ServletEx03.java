@@ -28,6 +28,7 @@ public class ServletEx03 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		System.out.println("doget 메소드 시작");
+		System.out.println(request.getParameter("id"));
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
