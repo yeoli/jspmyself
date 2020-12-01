@@ -1,11 +1,16 @@
 package chap17;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class ServletEx03
@@ -27,6 +32,17 @@ public class ServletEx03 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
+		HttpSession session = request.getSession();
+		ServletContext application = request.getServletContext();
+		application = getServletContext();
+		ServletConfig config = getServletConfig();
+		
+		PrintWriter out = response.getWriter();
+		response.getOutputStream();
+		
+		
+		
 		System.out.println("doget 메소드 시작");
 		System.out.println(request.getParameter("id"));
 		response.getWriter().append("Served at: ").append(request.getContextPath());

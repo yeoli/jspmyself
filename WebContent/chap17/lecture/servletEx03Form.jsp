@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h3>doGet, doPost 연습</h3>
-<form action="${pageContext.request.contextPath }/ex03" method="post">
-  이름 : <input type="text" name="name"/>
- <br />
+<h3>response 활용 연습</h3>
+<form action="${pageContext.request.contextPath }/ex05" method="post">
+  이름 : <input type="text" name="name"/> <br />
+  나이 : <input type="number" name="age"/> <br />
  <input type="submit" value="전송"/>
 </form>
 </body>

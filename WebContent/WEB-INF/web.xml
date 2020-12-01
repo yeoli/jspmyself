@@ -24,4 +24,7 @@
     <servlet-name>servlet01</servlet-name>
     <url-pattern>/ex012</url-pattern>
   </servlet-mapping>
+  
+
+  
 </web-app>
